@@ -106,3 +106,17 @@ INSERT INTO dependent (essn, dependent_name, sex, bdate, relationship) VALUES
 (2, 'Michael', 'm', '2016-03-30', 'Son'),
 (3, 'Sara', 'f', '2017-04-15', 'Daughter'),
 (4, 'Tom', 'm', '2019-05-25', 'Son');
+
+-- Inserindo gerentes na tabela employee
+INSERT INTO employee (fname, minit, lname, sex, bdate, address, salary, super_ssn, dno) VALUES
+('Jana', 'M', 'Flores', 'f', '1996-02-15', '3 Lik St', 75000.00, 1, 1),
+('Ana', 'P', 'Melo', 'f', '2005-03-22', '45 St', 75000.00, 1, 2),
+('Lisa', 'C', 'Robs', 'f', '1992-07-30', '9 Vis St', 75000.00, 1, 3),
+('Alex', 'D', 'Torres', 'm', '1988-12-11', '35 Nell St', 75000.00, 1, 4),
+('Bill', 'E', 'Grimmes', 'm', '1995-11-25', '24 Apple St', 75000.00, 1, 5);
+
+UPDATE department SET mgr_ssn = 6 WHERE dnumber = 1;
+UPDATE department SET mgr_ssn = 7 WHERE dnumber = 2;
+UPDATE department SET mgr_ssn = 8 WHERE dnumber = 3;
+UPDATE department SET mgr_ssn = 9 WHERE dnumber = 4;
+UPDATE department SET mgr_ssn = 10 WHERE dnumber = 5;
